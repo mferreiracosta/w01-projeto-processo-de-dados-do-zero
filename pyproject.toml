@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "w01-projeto-processo-de-dados-do-zero"
+version = "0.1.0"
+description = ""
+authors = ["Matheus Costa <matheeusferreeira@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "==3.12.3"
+streamlit = "^1.33.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
