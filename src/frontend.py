@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 class ExcelValidatorUI:
 
     def __init__(self):
@@ -11,7 +12,14 @@ class ExcelValidatorUI:
         )
 
     def display_header(self):
-        st.title("Validador de schema excel")
+        st.title("Insira o excel para validação")
 
     def upload_file(self):
         return st.file_uploader("Carregue seu arquivo excel aqui", type=["xlsx"])
+    
+    def display_results(self, result, errors):
+        if errors:
+            for error in errors:
+                st.error(f"Erro na validação: {error}")
+        else:
+            st.success("O schema do arquivo excel está correto!")
