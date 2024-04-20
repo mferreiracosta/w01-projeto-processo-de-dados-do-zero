@@ -1,0 +1,19 @@
+name: implementing-ci-pipeline
+run-name: ${{ github.actor }} is implementing CI-CD in the pipeline
+
+on: [push]
+
+jobs:
+    build:
+
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Our first CI
+              run: echo "hello world!"
+
+            - name: Print files
+              run: echo $(ls)
+
+            - name: Print path
+              run: echo $(pwd)
