@@ -2,9 +2,6 @@ name: implementing-ci-pipeline
 run-name: ${{ github.actor }} is implementing CI-CD in the pipeline
 
 on:
-  push:
-    branches: [dev]
-
   pull_request:
     branches: [main]
     types: [opened, synchronize]
