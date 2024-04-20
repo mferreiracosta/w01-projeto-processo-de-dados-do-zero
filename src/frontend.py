@@ -12,7 +12,7 @@ class ExcelValidatorUI:
         )
 
     def display_header(self):
-        st.title("Não gosto do meu cliente")
+        st.title("Insira o excel para validação")
 
     def upload_file(self):
         return st.file_uploader("Carregue seu arquivo excel aqui", type=["xlsx"])
