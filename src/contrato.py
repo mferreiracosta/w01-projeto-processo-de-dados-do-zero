@@ -14,7 +14,6 @@ class CategoriaEnum(str, Enum):
 class Vendas(BaseModel):
     email: EmailStr
     data: datetime
-    valor: PositiveFloat
     produto: str
     quantidade: PositiveInt
     categoria: CategoriaEnum
